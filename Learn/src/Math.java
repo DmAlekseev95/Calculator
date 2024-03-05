@@ -15,11 +15,11 @@ public class Math {
             System.out.println("\"" + result + "\"");
         }
     }
-    public String summ() throws Exception {
+    public String summ() {
         this.result = value0 + value1;
         return this.result;
     }
-    public void subtract() throws Exception {
+    public void subtract() {
         int index = value0.indexOf(value1);
         if (index == -1) {
             result = value0;
