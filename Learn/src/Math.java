@@ -16,12 +16,10 @@ public class Math {
         }
     }
     public String summ() throws Exception {
-        if (!value1.contains("\"")) throw new Exception("При сложении оба аргумента должны быть строками");
         this.result = value0 + value1;
         return this.result;
     }
     public void subtract() throws Exception {
-        if (!value1.contains("\"")) throw new Exception("При вычитании оба аргумента должны быть строками");
         int index = value0.indexOf(value1);
         if (index == -1) {
             result = value0;

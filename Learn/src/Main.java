@@ -10,11 +10,13 @@ public class Main {
         Math a = null;
         if (exp.contains(" + ")) {
             value = exp.split(" \\+ ");
+            if (!value[1].contains("\"")) throw new Exception("При сложении оба аргумента должны быть строками");
             a = new Math(value[0], value[1]);
             a.summ();
             oper = '+';
         } else if (exp.contains(" - ")) {
             value = exp.split(" - ");
+            if (!value[1].contains("\"")) throw new Exception("При сложении оба аргумента должны быть строками");
             a = new Math(value[0], value[1]);
             a.subtract();
             oper = '-';
